@@ -1,0 +1,145 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #e67e22;
+    border-radius: 5rem;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.heading {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #130f40;
+}
+
+.heading span {
+    color: #e67e22;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border: 0.2rem solid #130f40;
+    cursor: pointer;
+    background: none;
+    color: #130f40;
+    font-size: 1.7rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #130f40;
+    z-index: -1;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    -webkit-clip-path: circle(0% at 0% 5%);
+    clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+    -webkit-clip-path: circle(100%);
+    clip-path: circle(100%);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+
+.footer {
+    position: relative;
+    background: url(../image/footer_background.jpg) no-repeat;
+    background-position: center;
+    background-size: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    top: 50px;
+}
+
+.footer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9rem;
+    width: 100%;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    position: relative;
+    top: 50px;
+}
+
+.footer .social a {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer .social a:hover {
+    color: #130f40;
+}
+
+.footer .social a::before {
+    background: #fff;
+}
+
+.footer .social a i {
+    padding-right: .5rem;
+}
+
+.footer .credit {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 2.5rem;
+}
+
+.footer .credit span {
+    color: #e67e22;
+}

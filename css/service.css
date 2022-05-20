@@ -1,0 +1,593 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap);
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --carrot-color: #e2a52c;
+  --yellow: #c9e881;
+  --blue: #320a96;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --border: 0.2rem solid black;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 1px;
+}
+section {
+  padding: 5rem 9%;
+}
+
+body {
+  height: 500rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  margin-top: -20px;
+  padding: -50px;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar a:hover {
+  color: var(--light-color);
+  text-decoration: none;
+}
+.icons a,
+.icons div {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  color: rgb(18, 18, 18);
+  cursor: pointer;
+}
+.icons a,
+.icons div:hover {
+  color: #1f2af6;
+  margin-left: 1.5rem;
+}
+
+h3 {
+  color: black;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+#menu-btn {
+  display: none;
+}
+
+.service {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url(../image/pngwing.com.png) no-repeat;
+  background-size: 500px;
+  background-position-x: -10px;
+  background-position-y: 137px;
+  background-color: #e2a52c;
+  position: relative;
+}
+.conten {
+  width: 125rem;
+  position: absolute;
+  top: 200px;
+}
+h3 {
+  font-size: 30px;
+  position: absolute;
+  top: -80px;
+  right: 100px;
+  padding-bottom: 1rem;
+  color: rgb(17, 17, 17);
+}
+span {
+  color: #543d8d;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+}
+
+.carec{
+  left: 110px;
+position: absolute;
+margin-top: 100px;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 900px;
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%) ;
+  width: 70vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 9vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 1.5s;
+  animation-delay: 2.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+ /*start card*/
+ body::before{
+  content: '';
+  position: absolute;
+  width: 200%;
+  top: 865px;
+  background: #fdfdfd;
+  clip-path: inset(40% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+ ::selection{
+  background:	#a14ee6;
+  color: rgb(49, 47, 47);
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+  position: relative;
+  top: 500px;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #a14ee6;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #a14ee6;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #a14ee6;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #a14ee6;
+  background-color: #fff;
+  border-color: #a14ee6;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: rgb(27, 26, 26);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+/*end card*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width: 900px) {
+  #menu-btn {
+    display: none;
+  }
+  .icons a,
+  .icons div {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+  }
+  .service {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../image/pngwing.com.png) no-repeat;
+    background-size: 500px;
+    background-position-x: -10px;
+    background-position-y: 137px;
+    background-color: #e2a52c;
+    position: relative;
+  }
+  h3 {
+    font-size: 43px;
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    margin: 0 -9rem;
+    font-size: 10px;
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    position: sticky;
+    top: 0px;
+  }
+  h3 {
+    font-size: 23px;
+    position: absolute;
+    top: -18px;
+    right: 8px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+  .service {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../image/pngwing.com.png) no-repeat;
+    background-size: 484px;
+    background-position-x: -54px;
+    background-position-y: 260px;
+    background-color: #e2a52c;
+    position: relative;
+  }
+  .wave {
+    position: absolute;
+    bottom: -5px;
+    left: 1px;
+    width: 100%;
+    height: 5rem;
+  }
+  .icons a,
+  .icons div {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+  }
+  .service {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../image/pngwing.com.png) no-repeat;
+    background-size: 500px;
+    background-position-x: -54px;
+    background-position-y: 406px;
+    background-color: #e2a52c;
+    position: relative;
+  }
+
+  h3 {
+    font-size: 22px;
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+}
+@media (width: 450px) {
+  .navbar a {
+    margin: 0 1rem;
+    font-size: 10px;
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    position: sticky;
+    top: 0px;
+  }
+  h3 {
+    font-size: 23px;
+    position: absolute;
+    top: -18px;
+    right: 8px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+  .wave {
+    position: absolute;
+    bottom: -5px;
+    left: 1px;
+    width: 100%;
+    height: 5rem;
+  }
+  .icons a,
+  .icons div {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+  }
+  .service {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../image/pngwing.com.png) no-repeat;
+    background-size: cover;
+    background-position-x: -54px;
+    background-position-y: 215px;
+    background-color: #e2a52c;
+    position: relative;
+  }
+  h3 {
+    font-size: 22px;
+    position: absolute;
+    top: -18px;
+    right: 13px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+}
+@media (width: 360px) {
+  .navbar a {
+    margin: 0 -9rem;
+    font-size: 10px;
+    color: rgb(13, 13, 13);
+    text-decoration: none;
+    position: sticky;
+    top: 0px;
+  }
+  h3 {
+    font-size: 23px;
+    position: absolute;
+    top: -18px;
+    right: 8px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+  .service {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../image/pngwing.com.png) no-repeat;
+    background-size: 484px;
+    background-position-x: -54px;
+    background-position-y: 260px;
+    background-color: #e2a52c;
+    position: relative;
+  }
+  .wave {
+    position: absolute;
+    bottom: -5px;
+    left: 1px;
+    width: 100%;
+    height: 5rem;
+  }
+  .icons a,
+  .icons div {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+  }
+  .service {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(../image/pngwing.com.png) no-repeat;
+    background-size: 500px;
+    background-position-x: -76px;
+    background-position-y: 270px;
+    background-color: #e2a52c;
+    position: relative;
+  }
+
+  h3 {
+    font-size: 22px;
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    padding-bottom: 1rem;
+    color: rgb(17, 17, 17);
+  }
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
